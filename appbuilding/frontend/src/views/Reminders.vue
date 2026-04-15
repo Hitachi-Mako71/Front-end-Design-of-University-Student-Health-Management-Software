@@ -136,7 +136,7 @@ label {
   display: block;
   margin-bottom: 8px;
   font-weight: 500;
-  color: var(--text-color);
+  color: var(--text-primary);
 }
 
 input {
@@ -145,16 +145,18 @@ input {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
   transition: var(--transition);
+  background-color: white;
+  color: var(--text-primary);
 }
 
 input:focus {
   outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+  border-color: var(--primary-mint);
+  box-shadow: 0 0 0 2px rgba(126, 216, 208, 0.2);
 }
 
 button {
-  background: var(--primary-color);
+  background: var(--primary-mint);
   color: white;
   border: none;
   padding: 10px 20px;
@@ -168,7 +170,7 @@ button {
 button:hover {
   background: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
+  box-shadow: 0 4px 8px rgba(126, 216, 208, 0.3);
 }
 
 button:active {
@@ -176,16 +178,17 @@ button:active {
 }
 
 li {
-  background-color: #f9f9f9;
+  background-color: white;
   border-radius: var(--border-radius);
   padding: 15px;
   margin-bottom: 15px;
   transition: var(--transition);
-  border-left: 4px solid var(--primary-color);
+  border-left: 4px solid var(--primary-mint);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 li:hover {
-  background-color: #f0f0f0;
+  background-color: var(--background-light);
   transform: translateX(5px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -199,7 +202,7 @@ li:hover {
 
 .plan-type {
   font-size: 12px;
-  color: var(--text-light);
+  color: var(--text-secondary);
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
@@ -209,7 +212,7 @@ li:hover {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.4;
-  color: var(--text-color);
+  color: var(--text-primary);
 }
 
 .plan-priority {
@@ -223,11 +226,12 @@ li:hover {
 }
 
 .priority-low {
-  background: var(--primary-color);
+  background: var(--primary-mint);
 }
 
 .priority-medium {
-  background: var(--warn-color);
+  background: var(--secondary-pastel-blue);
+  color: var(--text-primary);
 }
 
 .priority-high {
@@ -236,7 +240,7 @@ li:hover {
 
 .plan-time {
   font-size: 12px;
-  color: var(--text-light);
+  color: var(--text-secondary);
   margin-bottom: 15px;
   padding-top: 10px;
   border-top: 1px solid var(--border-color);
@@ -255,19 +259,21 @@ li:hover {
 }
 
 .plan-actions button:nth-child(2) {
-  background: #666;
+  background: var(--text-secondary);
 }
 
 .plan-actions button:nth-child(2):hover {
-  background: #555;
+  background: var(--text-primary);
 }
 
 .plan-actions button:nth-child(3) {
-  background: var(--secondary-color);
+  background: var(--secondary-pastel-blue);
+  color: var(--text-primary);
 }
 
 .plan-actions button:nth-child(3):hover {
   background: var(--secondary-dark);
+  color: white;
 }
 
 .copyright {
@@ -286,7 +292,7 @@ li:hover {
 
 .copyright p {
   margin-bottom: 15px;
-  color: var(--text-light);
+  color: var(--text-secondary);
   font-size: 14px;
 }
 
@@ -298,7 +304,7 @@ li:hover {
 }
 
 .copyright-links a {
-  color: var(--primary-color);
+  color: var(--primary-mint);
   text-decoration: none;
   font-size: 12px;
   transition: var(--transition);
@@ -308,7 +314,7 @@ li:hover {
 
 .copyright-links a:hover {
   color: var(--primary-dark);
-  background-color: rgba(76, 175, 80, 0.1);
+  background-color: rgba(126, 216, 208, 0.1);
   text-decoration: none;
   transform: translateY(-2px);
 }
